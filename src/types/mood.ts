@@ -1,8 +1,8 @@
-export type MoodLevel = 1 | 2 | 3 | 4 | 5;
+export type Emotion = 'HAPPY' | 'CALM' | 'SAD' | 'ANGRY' | 'ANXIOUS' | 'TIRED';
 
 export type MoodEntry = {
-  id: string;
-  date: string;
-  mood: MoodLevel;
+  text: string;
+  icon: string;
+  emotion: Emotion;
   note?: string;
 };
